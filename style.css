@@ -1,0 +1,59 @@
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+#map {
+    position: fixed;
+    width:55%;
+}
+#features {
+    width: 45%;
+    margin-left: 55%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+section {
+    padding:  25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 13px;
+}
+section.active {
+    opacity: 1;
+}
+
+section:first-child {
+    border-bottom: none;
+    margin-top: 60px;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom:60px;
+}
+.rest{
+
+width: 100%;
+height:auto;
+}
+h2{
+font-weight: bold;
+
+}
+h2, h6{
+  text-align: center;
+}
+
+.icon{ height: 8rem;
+  width: auto;
+}
+
+small{
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
