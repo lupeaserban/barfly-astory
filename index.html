@@ -43,10 +43,6 @@
         <img class="rest" src="./img/brindisi.jpg">
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <a href="http://www.ploufsf.com/01_home.html" target="_blank">Plouf</a>
-        <img class="rest" src="./img/plouf.jpg">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
       </section>
       <section id='cafe'>
         <img class="icon" src="./img/glass2.png">
@@ -79,15 +75,15 @@
 
         <h3>Skills</h3>
         <ul>
-          <li>Experienced with all POS systems.</li>
-          <li>Confident with cash handling and credit card transactions.</li>
-          <li>Professional and courteous in fast-paced establishments.</li>
-          <li>Well versed with assisting guests with paring menu choices.</li>
-          <li>Thorough knowledge of food, spirits, and cocktails.</li>
-          <li>Using jiggers, and different techniques like building, stirring and shaking.</li>
-          <li>Multi-tasking abilities with service duties.</li>
-          <li>Ablity to operate an espresso machine and customize coffee based delights.</li>
-          <li>Familiar with register closing reports and other restaurant procedures.</li>
+          <li>Duis aute irure dolor in reprehenderit.</li>
+          <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</li>
+          <li>Psed do eiusmod tempor incididunt ut labore.</li>
+          <li>Wesit voluptatem accusantium doloremque laudantium.</li>
+          <li>Consectetur adipiscing elit sed do eiusmod.</li>
+          <li>Usin voluptate velit esse cillum dolore eu fugiat nulla.</li>
+          <li>Amet consectetur adipiscing elit.</li>
+          <li>Adipiscing elit, sed do eiusmod tempor incididunt u.</li>
+          <li>Fratione voluptatem sequi nesciunt.Neque porro quisquam est.</li>
         </ul>
       </p>
       <h3>Languages</h3>
@@ -128,61 +124,62 @@
 </section>
 </div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibHVwZWFzZXJiYW4iLCJhIjoiY2owaGNsMjZyMDJ5eDJxcDVleWE2a3BjdCJ9.fMYQbhKexTYmOygHsUSUEw';
+mapboxgl.accessToken =
+  "pk.eyJ1IjoibHVwZWFzZXJiYW4iLCJhIjoiY2owaGNsMjZyMDJ5eDJxcDVleWE2a3BjdCJ9.fMYQbhKexTYmOygHsUSUEw";
 
 var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/lupeaserban/cj84144ev0bxa2sp1btgk3ud4',
-  center: [-77.07121086120605,38.365007983465276],
+  container: "map",
+  style: "mapbox://styles/lupeaserban/cj84144ev0bxa2sp1btgk3ud4",
+  center: [-77.07121086120605, 38.365007983465276],
   zoom: 7,
   bearing: 27,
   pitch: 45
 });
 
 var chapters = {
-  'one': {
-    center: [-77.07121086120605,38.365007983465276],
+  one: {
+    center: [-77.07121086120605, 38.365007983465276],
     zoom: 7,
     bearing: 27,
     pitch: 45
   },
-  'coconuts': {
+  coconuts: {
     duration: 8000,
     bearing: 27,
-    center: [-75.07121086120605,38.365007983465276],
+    center: [-75.07121086120605, 38.365007983465276],
     zoom: 12,
     pitch: 20
   },
-  'belden': {
+  belden: {
     duration: 8000,
-    center: [-122.40379393100739,37.79131597983335],
+    center: [-122.40379393100739, 37.79131597983335],
     bearing: 90,
     zoom: 18,
     pitch: 20
   },
-  'cafe': {
+  cafe: {
     bearing: 90,
-    center: [-122.40544617176056,  37.790442695337504],
+    center: [-122.40544617176056, 37.790442695337504],
     zoom: 18,
     speed: 0.6,
     pitch: 40
   },
-  'palio': {
+  palio: {
     bearing: 90,
     center: [-122.40371614694595, 37.79381283826803],
     zoom: 18,
     pitch: 0
   },
-  'dorian': {
+  dorian: {
     bearing: 45,
-    center: [-122.43644714355469,37.80065015276206],
+    center: [-122.43644714355469, 37.80065015276206],
     zoom: 18,
     pitch: 20,
     speed: 0.5
   },
-  'last': {
+  last: {
     bearing: 90,
-    center: [-122.43644714355469,37.80065015276206],
+    center: [-122.43644714355469, 37.80065015276206],
     zoom: 11.3,
     pitch: 0
   }
@@ -200,14 +197,14 @@ window.onscroll = function() {
   }
 };
 
-var activeChapterName = 'one';
+var activeChapterName = "one";
 function setActiveChapter(chapterName) {
   if (chapterName === activeChapterName) return;
 
   map.flyTo(chapters[chapterName]);
 
-  document.getElementById(chapterName).setAttribute('class', 'active');
-  document.getElementById(activeChapterName).setAttribute('class', '');
+  document.getElementById(chapterName).setAttribute("class", "active");
+  document.getElementById(activeChapterName).setAttribute("class", "");
 
   activeChapterName = chapterName;
 }
@@ -217,7 +214,6 @@ function isElementOnScreen(id) {
   var bounds = element.getBoundingClientRect();
   return bounds.top < window.innerHeight && bounds.bottom > 0;
 }
-
 </script>
 
 </body>
